@@ -1,0 +1,62 @@
+﻿@model IEnumerable<WebApplication1.Models.Product>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Product List</h1>
+
+<p style="text-align:right;margin-right:20px;">
+    <a class="btn btn-primary" asp-action="AddOrEdit">Create New</a>
+</p>
+<form asp-controller="Product" asp-action="Index">
+    <p>
+        <input type="text" name="param"/>
+        <input type="submit" value="Search"/>
+    </p>
+</form>
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.nama_barang)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.kode_barang)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.jumlah_barang)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.tanggal)
+                </th>               
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.nama_barang)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.kode_barang)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.jumlah_barang)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.tanggal)
+                </td>
+                <td class="text-center">
+                    <a asp-action="AddOrEdit" class="btn btn-primary"  asp-route-Id ="@item.id">Edit</a>               
+                    <a asp-action="Delete" class="btn btn-danger" asp-route-Id ="@item.id">Delete</a>
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+    </div>

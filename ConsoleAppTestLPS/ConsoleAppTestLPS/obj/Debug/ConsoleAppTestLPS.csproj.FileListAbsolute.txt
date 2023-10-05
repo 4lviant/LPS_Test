@@ -1,0 +1,5 @@
+c:\users\alfia\documents\visual studio 2015\Projects\ConsoleAppTestLPS\ConsoleAppTestLPS\bin\Debug\ConsoleAppTestLPS.exe.config
+c:\users\alfia\documents\visual studio 2015\Projects\ConsoleAppTestLPS\ConsoleAppTestLPS\bin\Debug\ConsoleAppTestLPS.exe
+c:\users\alfia\documents\visual studio 2015\Projects\ConsoleAppTestLPS\ConsoleAppTestLPS\bin\Debug\ConsoleAppTestLPS.pdb
+c:\users\alfia\documents\visual studio 2015\Projects\ConsoleAppTestLPS\ConsoleAppTestLPS\obj\Debug\ConsoleAppTestLPS.exe
+c:\users\alfia\documents\visual studio 2015\Projects\ConsoleAppTestLPS\ConsoleAppTestLPS\obj\Debug\ConsoleAppTestLPS.pdb
